@@ -1,0 +1,98 @@
+
+-------ANA YAPILACAKLAR---------
+-tail renderer güzelleştirilecek veya alternatif vfx ayarlanacak(dilara/öğlen 3)
+-line renderer posisyon düzenlemesi yapılacak(tail rendererden sonra bir bak dilara- tail ile iş biterse buna bak.)
+-istasyon eklenecek(yasin öğlen 3)
+-portallar eklenecek(yasin öğlen 3)
+-geminin seçilen portallara gitmesi sağlanacak veya geminin reddedildiğinde ekran dışına çıkması/ destroy edilmesi sağlanacak(gemiyi reddedince patlatabiliriz. Önemli bir rolümüz varmış havası oluşur)(mert, emre, yasin öğlen 3 Mert ağrılıklı)
+reddedilen veya onaylanan gemiler için fazladan line renderer konur. Bu line renderer'lar off/on şeklinde durur. if'e bağlayarak hangisinin on yapılacağı ayarlanabilir.
+
+-gemi boyutları geminin ekrana geldiği yollar ayarlanmalı. kamea pos ayarlanmalı
+-gemi stat sistemi kurulmalı(mnert öğlen 3)
+-kurulan stat sistemine UI tasarlanmalı(emre öğlen 3)
+
+
+-menü(emre menü)
+-reddedilen gemilerin destory işlemi yapılacak(patlama vfx, sound, recorded animation kullanarak aşağıya doğru batma efekti yap.)(emre, mert saat verilmedi)
+-idle wait recorded ani yap.(emre, mert saat verilmedi)
+-GDD hazırla.
+-oyun kapağı(video kapağı) aynı zamanda menü için de kullanılır.
+-oyuna başlık bul(gateaway protokol)
+
+
+
+
+EKLENEBİLİRLER
+raylı cinemachine kullanabiliriz. istasyon için (yasin-öğlen 3)
+gemi yıkamacılık. kamera posunu cinemachine ile değiştir
+backgorund çeşitlendirilebilir
+ÖNEMLİ EKLENEBİLİR-Oyunda ne yaptığını anlattığın bir narrative lazım.(bugün işte ilk günüm. Bu gemilerin geçip geçmeyeceğine ben karar vereceğim. Büyük sorumluluk patlatıcam cart curt./bir subay gelir pop up text ve subay görseli ile ne yapacağını anlatır.)  (yetişirse böyle yetişmezse basit bir text ile oyunu özetle)
+-seseler ve müzikler.(arkada fon müziği ekle 1 tane bile olsa)(emre, yasin, dilara(ekstra iş biterse bakılsın))
+
+
+
+
+
+yeni gemliler sahneye eklenerek ve sırası geldiğinde hareket edecek
+
+
+
+
+temel oynanış:
+gemi ekranın önüne gelir. 
+Portalların izin verdiği sınırlamalara göre gemiler geçirilir veya reddedilir. 
+win condition fikri: reddedilen gemiler patlatılır. Yanlış gemi patlatılması halinde lose condition.
+
+
+
+
+
+
+statlar:
+gemi adı ve kodu. Gemi yük tipi ve ağırlığı. Gemi motor tipi? (nükleer ile çalışan, ışığı enerjiye çeviren vs). Kaçak yük tespiti(tespit edilmiş/edilmemiş) Universe statı. Universe: Nebula, Milkyway, 
+ekstra stat: geminin hangi tarihten geldiği(paralel evrenler konsepti)
+
+
+Gate Şartları:
+gate1: ton min 20 max 40
+Cargo type: evrything
+Cargo scan: true
+engine type: lpgliler giremez
+origin date: future time
+
+gate 2:
+ton: evrything
+Cargo type: everting except for ammunition.
+Cargo scan: false
+engine type: everything.
+origin date: past time.
+
+gate3
+ton: 5 20
+Cargo type: only humans
+Cargo scan: true
+engine type: only solar energy
+origin date: doesn't matter.
+
+
+
+
+
+
+
+
+
+çok ekstra(diğer temelleri yaptıktan sonra eklenebilir)
+istasyon odası tasarla. önünde bilgisayar olsun ve gerekli bilgileri oradan ulaş.
+fp gameplay ile oda içerisinde hareket edebil ve bilgisayarla etkileşime girebil.
+onaylama veya reddetme işlemlerini buradan hallet
+
+
+
+
+
+
+-------------------------BİTEN İŞLER---------------
+
+STAT BİTTİ 
+MAİN MENU BİTTİ
