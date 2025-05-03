@@ -11,7 +11,7 @@ public class README : MonoBehaviour
 
     https://assetstore.unity.com/packages/3d/vehicles/space/federation-corvette-f3-79860 firstShip prefab
     https://www.youtube.com/watch?v=VW3PkEF1Fzk&list=PLHcOLPSLOK7PNvLAdnqicE_BeqoNH7Zwz&index=1 skybox yapımı dakika 15
-    
+    https://www.pngwing.com/ pngler buradan alınıyor
     
     
     
