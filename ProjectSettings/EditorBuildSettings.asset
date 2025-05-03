@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/DefaultCreatedFolders/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: "Assets/EmreYap\u0131c\u0131/Scenes/MainMenu.unity"
+    guid: 330a5ddfbed7419408ef3cf09ef47b8f
+  - enabled: 1
+    path: "Assets/MertBekta\u015F/Scenes/MertBekta\u015FTestScene.unity"
+    guid: 8d3d6d552ecb5174294bb079cf3a3744
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
