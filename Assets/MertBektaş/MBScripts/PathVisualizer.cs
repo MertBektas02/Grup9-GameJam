@@ -28,6 +28,7 @@ public class PathVisualizer : MonoBehaviour
     public void UseGateOnePath()
     {
         SetActivePath(gateOnePositions);
+        Destroy(gameObject,3f);
     }
 
     public void UseGateTwoPath()
