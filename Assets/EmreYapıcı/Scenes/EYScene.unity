@@ -6560,6 +6560,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 762782168250259209, guid: 9eaa3f97b86168242a7961021b1fd6b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0312
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266222817325766162, guid: 9eaa3f97b86168242a7961021b1fd6b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.8594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266222817325766162, guid: 9eaa3f97b86168242a7961021b1fd6b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0881
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681966862296249980, guid: 9eaa3f97b86168242a7961021b1fd6b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0242
+      objectReference: {fileID: 0}
     - target: {fileID: 6363098380680759797, guid: 9eaa3f97b86168242a7961021b1fd6b2, type: 3}
       propertyPath: m_Name
       value: Station Inside
@@ -6603,6 +6619,10 @@ PrefabInstance:
     - target: {fileID: 6843612054137264759, guid: 9eaa3f97b86168242a7961021b1fd6b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860119488642052808, guid: 9eaa3f97b86168242a7961021b1fd6b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0199
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
