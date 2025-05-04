@@ -28,6 +28,7 @@ public class PathVisualizer : MonoBehaviour
     public void UseGateOnePath()
     {
         SetActivePath(gateOnePositions);
+
     }
 
     public void UseGateTwoPath()
@@ -46,6 +47,7 @@ public class PathVisualizer : MonoBehaviour
     }
 
     private void UpdateLineRenderer()
+    
     {
         if (activePath == null || activePath.Length == 0) return;
 
