@@ -19,7 +19,12 @@ public class PanelManager : MonoBehaviour
     public Button closeGateTwoButton;
     public Button closeGateThreeButton;
     public Button closePCButton;
-    
+
+    // Yeni eklediğim kısım - EY
+    [Header("Player Kontrol")]
+    public PlayerMovement playerMovement;
+
+
 
     void Start()
     {
@@ -47,8 +52,10 @@ public class PanelManager : MonoBehaviour
         {
             isMainPanelActive = !isMainPanelActive;
             mainPanel.SetActive(isMainPanelActive);
+            SetPlayerControl(!isMainPanelActive); // Yeni eklediğim kısım - EY
         }
     }
+
 
     void AssignButtonEvents()
     {
@@ -116,4 +123,15 @@ public class PanelManager : MonoBehaviour
             panel.SetActive(false);
         }
     }
+
+    // Yeni eklediğim kısım - EY
+    void SetPlayerControl(bool isActive)
+    {
+        if (playerMovement != null)
+            playerMovement.enabled = isActive;
+
+        Cursor.visible = !isActive;
+        Cursor.lockState = isActive ? CursorLockMode.Locked : CursorLockMode.None;
+    }
+
 }

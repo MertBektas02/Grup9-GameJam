@@ -29,6 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1452580598056132695}
   - {fileID: 4248389868791374000}
   - {fileID: 6810407208614537019}
   - {fileID: 4790727921284567657}
@@ -171,7 +172,6 @@ Transform:
   - {fileID: 2557076274993794299}
   - {fileID: 8232289388471371558}
   - {fileID: 4733512848435514636}
-  - {fileID: 1452580598056132695}
   - {fileID: 2424619054688917950}
   - {fileID: 3762034673878642830}
   - {fileID: 2145027755412810212}
@@ -1381,6 +1381,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3989165361565637339}
     m_Modifications:
+    - target: {fileID: 1369523805379490, guid: 4eecec6b13bb35a4bb26aa65818e3e1b, type: 3}
+      propertyPath: m_Name
+      value: "K\u0131osk"
+      objectReference: {fileID: 0}
     - target: {fileID: 4478888722079222, guid: 4eecec6b13bb35a4bb26aa65818e3e1b, type: 3}
       propertyPath: m_RootOrder
       value: 6
