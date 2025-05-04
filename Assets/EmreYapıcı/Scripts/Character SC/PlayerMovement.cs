@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         cam = Camera.main;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * moveSpeed * Time.deltaTime);
 
-        // Yerçekimi
+        // Yerï¿½ekimi
         if (controller.isGrounded && velocity.y < 0)
             velocity.y = -2f;
 

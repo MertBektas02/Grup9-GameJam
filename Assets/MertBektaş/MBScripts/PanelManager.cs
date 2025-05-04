@@ -8,6 +8,7 @@ public class PanelManager : MonoBehaviour
     public GameObject gateOnePanel;
     public GameObject gateTwoPanel;
     public GameObject gateThreePanel;
+    public GameObject sendShipsPanel;
     public GameObject mainPanel;
 
     private bool isMainPanelActive = true;
@@ -18,7 +19,8 @@ public class PanelManager : MonoBehaviour
     public Button closeGateOneButton;
     public Button closeGateTwoButton;
     public Button closeGateThreeButton;
-    public Button closePCButton;
+    public Button closeSendShipsButton;
+    //public Button closePCButton;
     
 
     void Start()
@@ -63,7 +65,9 @@ public class PanelManager : MonoBehaviour
             else if (button.gameObject.name == "Gate2Button")
                 button.onClick.AddListener(OpenGateTwoPanel);
             else if (button.gameObject.name == "Gate3Button")
-                button.onClick.AddListener(OpenGateThreePanel); //else if'leri hiç sevemiyorum
+                button.onClick.AddListener(OpenGateThreePanel); 
+            else if(button.gameObject.name=="SendShipsPanelButton")
+                button.onClick.AddListener(OpenSendShipsPanel);
         }
 
 
@@ -73,11 +77,15 @@ public class PanelManager : MonoBehaviour
         
         if (closeGateTwoButton != null)
             closeGateTwoButton.onClick.AddListener(() => ClosePanel(gateTwoPanel));
-        
         if (closeGateThreeButton != null)
+        
             closeGateThreeButton.onClick.AddListener(() => ClosePanel(gateThreePanel));
-        if(closePCButton!=null)
-            closePCButton.onClick.AddListener(()=>ClosePanel(mainPanel));
+            
+        if(closeSendShipsButton!=null)
+            closeSendShipsButton.onClick.AddListener(() => ClosePanel(sendShipsPanel));
+            
+        //if(closePCButton!=null)
+        //    closePCButton.onClick.AddListener(()=>ClosePanel(mainPanel));
     }
 
     // Her buton için ayrı açma metodu
@@ -109,6 +117,14 @@ public class PanelManager : MonoBehaviour
             // İsteğe bağlı: Diğer panelleri kapat
         }
     }
+    public void OpenSendShipsPanel()
+    {
+        if (sendShipsPanel != null)
+        {
+            sendShipsPanel.SetActive(true);
+            // İsteğe bağlı: Diğer panelleri kapat
+        }
+    }
     public void ClosePanel(GameObject panel)
     {
         if (panel != null)
@@ -116,4 +132,10 @@ public class PanelManager : MonoBehaviour
             panel.SetActive(false);
         }
     }
+
+
+
+    //-------SENDING SHIPS TO GATES------------//
+
+
 }
