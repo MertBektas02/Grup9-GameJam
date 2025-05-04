@@ -5,6 +5,9 @@ public class MainMenuController : MonoBehaviour
 {
     public void PlayGame()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         SceneManager.LoadScene("MertBektaþTestScene"); // Sahne adý: Oyun sahne adý yapýlacak.
     }
 
