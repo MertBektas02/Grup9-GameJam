@@ -3,10 +3,11 @@ using UnityEngine;
 
 public enum SoundType
 {
-    ESPLOSION,
     ALARM,
+    BUTTONCLICK,
     MAUSEONBUTTON,
-    BUTTONCLICK
+    MAUSEONBUTTON2,
+    TELEPORTATION
 }
 [RequireComponent(typeof(AudioSource))]
 public class SoundManager : MonoBehaviour
@@ -24,7 +25,7 @@ public class SoundManager : MonoBehaviour
         audioSource=GetComponent<AudioSource>();
     }
 
-    public static void Game4PlaySAund(SoundType sound, float volume=1f)
+    public static void PlaySound(SoundType sound, float volume=1f)
    {
         instance.audioSource.PlayOneShot(instance.SoundList[(int)sound]);
    }

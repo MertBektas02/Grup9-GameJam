@@ -18,6 +18,7 @@ public class HoverEffect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public void OnPointerEnter(PointerEventData eventData)
     {
         transform.localScale = originalScale * hoverScaleMultiplier;
+        SoundManager.PlaySound(SoundType.MAUSEONBUTTON);
     }
 
     // Mouse üzerinden çekildiğinde
