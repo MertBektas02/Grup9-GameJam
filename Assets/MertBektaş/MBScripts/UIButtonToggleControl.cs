@@ -5,12 +5,12 @@ public class UIButtonTriggerControl : MonoBehaviour
 {
     [Header("UI Elements")]
     public GameObject panelObject;         // Açılıp kapanacak panel
-    public GameObject buttonObject;        // Gösterilecek butonun GameObject’i
-    public Button uiButton;                // Buton component’i
+    //public GameObject buttonObject;        // Gösterilecek butonun GameObject’i
+    //public Button uiButton;                // Buton component’i
 
     [Header("Panel Position Settings")]
-    public Transform cameraTransform;      // Kameranın Transform'u
-    public Vector3 panelOffset = new Vector3(0, 0, 2); // Kameraya göre panelin offset'i
+    // public Transform cameraTransform;      // Kameranın Transform'u
+    //public Vector3 panelOffset = new Vector3(0, 0, 2); // Kameraya göre panelin offset'i
 
     private bool isPanelVisible = false;
 
@@ -23,18 +23,18 @@ public class UIButtonTriggerControl : MonoBehaviour
     {
         // RotateButtonToFaceCamera();
         // RotatePanelToFaceCamera();
-        CheckToggleInput();
+        //CheckToggleInput();
         // LookAtCamera();
     }
 
     // Butona P tuşu ile tıklama simülasyonu
-    private void CheckToggleInput()
-    {
-        if (Input.GetKeyDown(KeyCode.P) && buttonObject.activeSelf && uiButton != null)
-        {
-            uiButton.onClick.Invoke();
-        }
-    }
+    // private void CheckToggleInput()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.P) && buttonObject.activeSelf && uiButton != null)
+    //     {
+    //         uiButton.onClick.Invoke();
+    //     }
+    // }
 
     // Paneli aç/kapa
     public void TogglePanel()

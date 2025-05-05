@@ -14,6 +14,11 @@ public class SpaceShipMovement : MonoBehaviour
     private int currentPointIndex = 0;
     private bool isMoving = false;
 
+
+    void Awake()
+    {
+        FindAndAssignPathVisualizer();
+    }
     void Update()
     {
         if (!isMoving || currentPath == null || currentPointIndex >= currentPath.Length) 
@@ -86,6 +91,23 @@ public class SpaceShipMovement : MonoBehaviour
     {
         currentPointIndex = 0;
         isMoving = false;
+    }
+
+
+        private void FindAndAssignPathVisualizer()
+    {
+        // Sahnedeki PathVisualizer'ı bul
+        PathVisualizer foundVisualizer = FindFirstObjectByType<PathVisualizer>();
+        
+        if (foundVisualizer != null)
+        {
+            pathVisualizer = foundVisualizer;
+            Debug.Log("PathVisualizer otomatik olarak atandı: " + pathVisualizer.name);
+        }
+        else
+        {
+            Debug.LogWarning("Sahnede PathVisualizer bulunamadı!");
+        }
     }
 }
 
