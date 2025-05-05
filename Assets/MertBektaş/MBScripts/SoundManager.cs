@@ -7,7 +7,8 @@ public enum SoundType
     BUTTONCLICK,
     MAUSEONBUTTON,
     MAUSEONBUTTON2,
-    TELEPORTATION
+    TELEPORTATION,
+    BACKGORUND
 }
 [RequireComponent(typeof(AudioSource))]
 public class SoundManager : MonoBehaviour
@@ -23,6 +24,7 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         audioSource=GetComponent<AudioSource>();
+        PlaySound(SoundType.BACKGORUND);
     }
 
     public static void PlaySound(SoundType sound, float volume=1f)

@@ -3,8 +3,9 @@ using UnityEngine;
 public class TriggerDestroyer : MonoBehaviour
 {
     [Header("Spawn Ayarları")]
-    [SerializeField] private GameObject shipPrefab;      // Inspector'dan atanacak prefab
-    [SerializeField] private Transform spawnPoint;        // İsteğe bağlı spawn pozisyonu
+    [SerializeField] private GameObject shipPrefab;      
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Animator animator;    
 
     private GameObject objectInTrigger;
     private bool isObjectInTrigger = false;
@@ -32,7 +33,9 @@ public class TriggerDestroyer : MonoBehaviour
         if (isObjectInTrigger && objectInTrigger != null)
         {
             Debug.Log($"{objectInTrigger.name} yok ediliyor.");
-            Destroy(objectInTrigger);
+            PlayAnimation();
+            SoundManager.PlaySound(SoundType.ALARM);
+            Destroy(objectInTrigger,4.3f);
             objectInTrigger = null;
             isObjectInTrigger = false;
 
@@ -57,5 +60,11 @@ public class TriggerDestroyer : MonoBehaviour
 
         GameObject newShip = Instantiate(shipPrefab, spawnPos, spawnRot);
         Debug.Log("Yeni ship instantiate edildi: " + newShip.name);
+    }
+
+
+    public void PlayAnimation()
+    {
+        animator.SetTrigger("StartExplosion");
     }
 }
