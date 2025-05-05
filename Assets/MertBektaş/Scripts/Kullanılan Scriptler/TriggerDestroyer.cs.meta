@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2e8a7b1ac7365224181155e45ac8fc23
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shipPrefab: {instanceID: 0}
+  - spawnPoint: {instanceID: 0}
+  - animator: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
